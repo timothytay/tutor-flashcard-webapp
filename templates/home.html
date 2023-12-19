@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Flashcard Master</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/tutor">Tutor Dashboard</a></li>
+                <li><a href="/student">Student Dashboard</a></li>
+            </ul>
+        </nav>
+        <section class="home-intro">
+            <h2>Enhance Your Learning Experience</h2>
+            <p>Welcome to Flashcard Master, the interactive platform for efficient and effective learning. Our platform allows tutors to create and assign custom flashcard sets to their students, enabling a personalized learning experience.</p>
+            <p>Are you a tutor looking to track your students' progress? Head over to the Tutor Dashboard to manage flashcard sets and view detailed analytics. If you're a student, your custom flashcards are waiting for you in the Student Dashboard. Start learning today!</p>
+        </section>
+    </div>
+</body>
+</html>
