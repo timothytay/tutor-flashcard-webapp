@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard App</title>
+    <title>Flashcard Master</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Welcome to Flashcard Master</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="/tutor">Tutor Dashboard</a></li>
-                <li><a href="/student">Student Dashboard</a></li>
-            </ul>
-        </nav>
-        <section class="home-intro">
-            <h2>Enhance Your Learning Experience</h2>
-            <p>Welcome to Flashcard Master, the interactive platform for efficient and effective learning. Our platform allows tutors to create and assign custom flashcard sets to their students, enabling a personalized learning experience.</p>
-            <p>Are you a tutor looking to track your students' progress? Head over to the Tutor Dashboard to manage flashcard sets and view detailed analytics. If you're a student, your custom flashcards are waiting for you in the Student Dashboard. Start learning today!</p>
-        </section>
-    </div>
+    <header>
+        <div class="navbar">
+            <span class="logo">Flashcard Master</span>
+            <nav>
+                <ul>
+                    <li><a href="/tutor">Tutor Dashboard</a></li>
+                    <li><a href="/student">Student Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Empower Your Learning Journey</h1>
+            <p>Interactive and personalized flashcards to enhance your educational experience.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <h2>Learn Effectively</h2>
+            <p>Customizable flashcards tailored to your learning style and preferences.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Track Your Progress</h2>
+            <p>Insightful analytics to monitor your learning achievements and areas for improvement.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Engage with Content</h2>
+            <p>Engaging and diverse content formats to keep your learning journey vibrant and exciting.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Flashcard Master. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

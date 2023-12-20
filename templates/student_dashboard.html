@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard</title>
+    <title>Student Dashboard - Flashcard Master</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Student Dashboard</h1>
+    <div class="flex-container">
+        <header class="navbar">
+            <div class="container">
+                <span class="logo">Flashcard Master</span>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/tutor">Tutor Dashboard</a></li>
+                        <li><a href="/student">Student Dashboard</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/tutor">Tutor Dashboard</a></li>
-            </ul>
-        </nav>
-        <section>
-            <!-- Student dashboard content goes here -->
-        </section>
+
+        <main class="container dashboard">
+            <h2>Student Dashboard</h2>
+            <p>Welcome to your dashboard. Here you can review your flashcards, track your progress, and much more.</p>
+            <!-- Dashboard content goes here -->
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 Flashcard Master. All Rights Reserved.</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
